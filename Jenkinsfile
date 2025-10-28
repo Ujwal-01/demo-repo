@@ -4,8 +4,7 @@ pipeline {
     environment {
         // Reference Jenkins credential ID (you’ll create this in Jenkins)
         GIT_CREDENTIALS_ID = a181863c-a1b1-4001-98ae-f2ff14df3261
-        GIT_REPO_URL = https://github.com/Ujwal-01/demo-repo.git
-        GIT_BRANCH = 'bug-fix'
+        GIT_REPO_URL = 'https://github.com/Ujwal-01/demo-repo.git'
     }
 
     stages {
