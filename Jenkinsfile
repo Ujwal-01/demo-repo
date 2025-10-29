@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo "Checking out the latest code from GitHub..."
+                echo "Checking out the latest code from GitHub repo..."
                 checkout scm
             }
         }
@@ -24,7 +24,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                echo "Running tests..."
+                echo "Running test cases..."
                 sh 'echo "All tests passed!"'
             }
         }
