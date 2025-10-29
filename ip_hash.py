@@ -13,7 +13,7 @@ class IPHash():
 servers = ["Server1", "Server2", "Server3"]
 load_balancer = IPHash(servers)
 
-client_ips = ["192.168.0.1", "192.168.0.2", "192.168.0.3"]
+client_ips = ["192.168.0.1", "192.168.0.2"]
 for ip in client_ips:
     server = load_balancer.get_next_server(ip)
     print(f"Client {ip} -> {server}")
